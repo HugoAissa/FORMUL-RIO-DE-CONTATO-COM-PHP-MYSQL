@@ -21,7 +21,7 @@ if (isset($_POST["nome"], $_POST["email"], $_POST["msg"])){
         $stm ->BindParam('msg', $msg);
         $stm ->execute();
         
-                function limpar(){
+        function limpar(){
             ("input").val("");
             ("textarea").val("");
         }
