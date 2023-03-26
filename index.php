@@ -20,6 +20,12 @@ if (isset($_POST["nome"], $_POST["email"], $_POST["msg"])){
         $stm ->BindParam('email', $email);
         $stm ->BindParam('msg', $msg);
         $stm ->execute();
+        
+                function limpar(){
+            ("input").val("");
+            ("textarea").val("");
+        }
+
 
         $mensagem = "Mensagem Enviada com Sucesso!";
 
